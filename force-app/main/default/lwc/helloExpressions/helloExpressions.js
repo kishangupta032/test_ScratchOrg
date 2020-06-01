@@ -3,7 +3,6 @@ import { LightningElement } from 'lwc';
 export default class HelloExpressions extends LightningElement {
     firstName = '';
     lastName = '';
-
     handleChange(event) {
         const field = event.target.name;
         if( field === 'firstName' ) {
@@ -12,9 +11,7 @@ export default class HelloExpressions extends LightningElement {
             this.lastName = event.target.value;
         }
     }
-
     get uppercasedFullName() {
         return `${this.firstName} ${this.lastName}`.toUpperCase();
     }
-    
 }
