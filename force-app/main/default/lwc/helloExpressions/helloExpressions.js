@@ -2,7 +2,7 @@ import { LightningElement } from 'lwc';
 
 export default class HelloExpressions extends LightningElement {
     firstName = '';
-    lastName = '';
+    lastName = ''; //test
     handleChange(event) {
         const field = event.target.name;
         if( field === 'firstName' ) {
